@@ -26,7 +26,7 @@ $("input[type='text']").keypress(function (e) {
 
 
 $("#icon").on("click", function () {
-    $("input[type='text']").fadeToggle(200, function () {
+    $("input[type='text']").slideToggle(200, function () {
         $("#icon").toggleClass("fa-arrow-down fa-arrow-up");
     });
     $("li").slideToggle();
