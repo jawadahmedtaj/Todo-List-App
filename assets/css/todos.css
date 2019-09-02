@@ -63,7 +63,6 @@ span {
     text-align: center;
     width: 0px;
     opacity: 0;
-    display: inline-block;
     transition: 0.2s linear;
     float: right;
 }
