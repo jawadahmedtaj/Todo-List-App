@@ -34,6 +34,7 @@ $("input[type='text']").keypress(function (e) {
         );
         $(this).val("");
       } else $(this).css("border", "3px solid red");
+    else $(this).css("border", "3px solid red");
   }
 });
 
