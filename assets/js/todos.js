@@ -4,7 +4,8 @@ $("ul").on("click", "#check", function (e) {
   $(this)
     .parent()
     .toggleClass("completed");
-  $("#check i").toggleClass("fa-check fa-check-double");
+  // https://stackoverflow.com/questions/306583/how-to-get-the-children-of-the-this-selector
+  $("i", this).toggleClass("fa-check fa-check-double");
 
   //   $(this).toggleClass("completed");
 });
@@ -23,7 +24,6 @@ $("ul").on("click", "#trash", function (e) {
 $("input[type='text']").keypress(function (e) {
   if (e.which === 13) {
     var todoText = $(this).val();
-    console.log(todoText.length);
     if (!(todoText.length > 35))
       if (todoText.length > 0) {
         $(this).css("border", "3px solid rgba(0, 0, 0, 0)");
